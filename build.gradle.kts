@@ -6,7 +6,7 @@ plugins {
     `maven-publish`
 }
 
-group = "org.codeclone.$name"
+group = "org.codeclone"
 version = "1.0.0"
 
 repositories {
@@ -35,7 +35,7 @@ publishing {
     repositories {
         maven {
             name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/ACCULA/accula")
+            url = uri("https://maven.pkg.github.com/ACCULA/suffix-tree")
             credentials {
                 username = project.findProperty("gpr.user") as String? ?: System.getenv("GPR_USERNAME")
                 password = project.findProperty("gpr.key") as String? ?: System.getenv("GPR_TOKEN")
