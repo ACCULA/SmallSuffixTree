@@ -1,6 +1,6 @@
 package com.suhininalex.suffixtree
 
-import org.junit.Test
+import org.junit.jupiter.api.Test
 import java.util.*
 import kotlin.system.measureTimeMillis
 

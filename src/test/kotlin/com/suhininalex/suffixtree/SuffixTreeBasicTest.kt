@@ -1,7 +1,7 @@
 package com.suhininalex.suffixtree
 
-import org.junit.Before
-import org.junit.Test
+import org.junit.jupiter.api.BeforeEach
+import org.junit.jupiter.api.Test
 
 
 data class CharToken(val char: Char): Comparable<CharToken>{
@@ -61,7 +61,7 @@ class SuffixTreeBasicTest {
         println("${canonizeRes.first} | ${canonizeRes.second}")
     }
 
-    @Before
+    @BeforeEach
     fun setUp() {
         tree.root.putEdge(sequence, 0)
         tree.root.putEdge(sequence, 1)
